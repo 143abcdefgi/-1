@@ -1,18 +1,25 @@
-meme_dict = {
-            "CRINGE": "Sesuatu yang sangat aneh atau memalukan",
-            "LOL": "Tanggapan umum terhadap sesuatu yang lucu",
-            "ROFL": "Tanggapan terhadap lelucon",
-            "SHEESH": "Sedikit ketidaksetujuan",
-            "CREEPY": "Menakutkan, tidak menyenangkan",
-            "AGGRO": "Untuk menjadi agresif/marah"
-            }
+import random
 
-word = input("Ketik kata yang tidak Kamu mengerti (gunakan huruf kapital semua!): ")
+ 
 
+keyword = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
 
-if word in meme_dict.keys():
-    # Apa yang harus kita lakukan jika kata itu ditemukan?
-    print(meme_dict[word])
-else:
-    # Apa yang harus kita lakukan jika kata itu tidak ditemukan?
-    print("Kata tidak ditemukan") 
+ 
+
+password = ""
+
+ 
+
+jumlah_password = int(input('Mau berapa banyak password yang di hasilkan?'))
+
+ 
+
+for i in range(jumlah_password):
+
+    # password = password + random.choice(keyword)
+
+    password += random.choice(keyword)
+
+ 
+
+print(password)
